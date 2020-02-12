@@ -1,0 +1,55 @@
+h1  {
+    font-size: 50px;
+    font-family: stencil-std, sans-serif;
+    font-weight: 900;
+    letter-spacing: .3em;
+    line-height: 1.6em;
+  }
+  
+  .hero{
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #253551bd;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+  }
+  
+  .heading {
+    width: 50%;
+  }
+  
+  .quote {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #f8b612;
+    font-size: large;
+    animation: fly-right 1.8s ease-in-out;
+  }
+  

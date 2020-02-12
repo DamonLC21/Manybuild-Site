@@ -1,0 +1,29 @@
+.mission-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.mission-container img {
+    height: 40rem;
+}
+
+.card {
+    width: 50%
+}
+
+.card h3 {
+    font-size: 35px;
+    font-family: sans-serif;
+    letter-spacing: .20px;
+    line-height: 1.2em;
+    margin-bottom: .4em;
+}
+
+.card p {
+    margin-bottom: 1em;
+}

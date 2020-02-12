@@ -1,0 +1,11 @@
+.explore {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 244, 244);
+    font-family: sans-serif;
+    font-size: x-large;
+    margin-bottom: 2rem;
+    height: 12rem;
+    justify-content: center;
+    align-items: center;
+  }
