@@ -1,11 +1,26 @@
 .explore {
     display: flex;
     flex-direction: column;
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(249, 249, 249);
     font-family: sans-serif;
-    font-size: x-large;
+    font-size: large;
+    font-weight: 900;
     margin-bottom: 2rem;
     height: 12rem;
     justify-content: center;
     align-items: center;
+  }
+
+  .explore button {
+    box-shadow: 0px 20px 20px -15px rgb(158, 158, 158);
+  }
+
+  .explore h2 {
+    font-size: 22px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: .4em;
   }

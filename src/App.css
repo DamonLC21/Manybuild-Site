@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Roboto:400,500|Open+Sans:700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Lato:400,700,900&display=swap');
 @import url("https://use.typekit.net/qml6bcw.css");
 @import './stylesheets/Nav.css';
 @import './stylesheets/Hero.css';
 @import './stylesheets/Mission.css';
 @import './stylesheets/Explore.css';
+@import './stylesheets/ProjectCreation.css';
+@import './stylesheets/Contractors.css';
+@import './stylesheets/Roadmap.css';
 
 *{
   margin: 0;
@@ -35,14 +38,73 @@ p {
   line-height: 1.5em;
 }
 
+#manybuild {
+  width: 40%;
+}
+
+.landing {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.welcome {
+  text-align: center;
+  display: inline;
+  opacity: 0;
+  animation: welcome linear 4.5s;
+  font-size: 40px;
+  font-family: stencil-std, sans-serif;
+  font-weight: 900;
+  letter-spacing: .3em;
+}
+
+#mb{
+  font-size: 60px;
+}
+
+.language {
+  color: white;
+  margin-bottom: 15px;
+}
+
+
+.welcome2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: welcome2 linear 3.5s;
+}
+
+.landing-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes welcome {
+  0% { opacity: 0; animation-timing-function: ease-in; height: 0px; }
+  8% { opacity: 1; }
+  19% { opacity: 1; }
+	35% { opacity: 0; }
+}
+
+@keyframes welcome2 {
+  0% { opacity: 0; animation-timing-function: ease-in; height: 0px; }
+  8% { opacity: 1; }
+  19% { opacity: 1; }
+	100% { opacity: 1; }
+}
+
 @keyframes fly-right {
-	0% {
+  0% {
     opacity: 0;
-		transform: translatex(60%);
-	}
-	100% {
-		transform: translatex(0px);
-	}
+    transform: translatex(60%);
+  }
+  100% {
+    transform: translatex(0px);
+  }
 }
 
 @keyframes wiggle {
@@ -59,8 +121,5 @@ p {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-#manybuild {
-  width: 40%;
 
-}
 

@@ -1,26 +1,68 @@
 {
-    "data": [
-        {
-            "title": "Create Projects",
-            "hook":  "It all begins with a project.",
-            "content": "Quickly snap photos of the work that need to be done, create rooms, add dimensions and automatically organize work by trades.  New construction?  Simply upload project files and ManyBuild does the rest."  
+    "data": {
+        "english": {
+            "navbar": ["Home", "About", "Road Map", "Team", "Contact"],
+            "hero": {
+                "heading": "Manybuild",
+                "quote": "“With the right team we can build anything”",
+                "subtext": "Contact us today to have us manage your construction bidding process with access to over 385+ subcontractors. Close to $1,000,000 in construction projects awarded in the past two months!",
+                "button": "Learn More"
+            },
+            "projectCreation": [
+                {
+                    "title": "Create Projects",
+                    "hook":  "It all begins with a project.",
+                    "content": "Quickly snap photos of the work that need to be done, create rooms, add dimensions and automatically organize work by trades.  New construction?  Simply upload project files and ManyBuild does the rest."  
+                },
+                {
+                    "title": "Bid Faster",
+                    "hook":  "Construction marketplace designed for everyone.",
+                    "content": "The sooner you post the project to the marketplace the faster the bid responses arrive.  Request for bid are instantly created specific to each project.  With ManyBuild’s growing community of contractors your start date is simply one click away. "  
+                },
+                {
+                    "title": "Manage Better",
+                    "hook":  "Is you project too successful?",
+                    "content": "ManyBuild intelligently alerts, tracks and communicates new projects available for bidding as well as the bids as they are submitted. Do not get stuck checking in, follow-up instead and get to contract faster."  
+                },
+                {
+                    "title": "Growing Feature List…",
+                    "hook":  "It starts with an idea.",
+                    "content": "ManyBuild is a community forward platform built to augment the talents of the building community.  While other technology platforms are innovating and optimizing for supply chains, ManyBuild is optimizing for the people."  
+                }
+            ]
         },
-        {
-            "title": "Bid Faster",
-            "hook":  "Construction marketplace designed for everyone.",
-            "content": "The sooner you post the project to the marketplace the faster the bid responses arrive.  Request for bid are instantly created specific to each project.  With ManyBuild’s growing community of contractors you start date is simply one click away. "  
-        },
-        {
-            "title": "Manage Better",
-            "hook":  "Is you project too successful?",
-            "content": "ManyBuild intelligently alerts, tracks and communicates new projects available for bidding as well as the bids as they are submitted. Do not get stuck checking in, follow-up instead and get to contract faster."  
-        },
-        {
-            "title": "Growing Feature List…",
-            "hook":  "It all begins with an idea.",
-            "content": "ManyBuild is a community forward platform built to augment the talents of the building community.  While other technology platforms are innovating and optimizing for supply chains, ManyBuild is optimizing for the people."  
+        "espanol": {
+            "navbar": ["Home", "About", "Road Map", "Team", "Contact"],
+            "hero": {
+                "heading": "Manybuild",
+                "quote": "“With the right team we can build anything”",
+                "subtext": "Contact us today to have us manage your construction bidding process with access to over 385+ subcontractors. Close to $1,000,000 in construction projects awarded in the past two months!",
+                "button": "Learn More"
+            },
+            "projectCreation": [
+                {
+                    "title": "Create Projects",
+                    "hook":  "It all begins with a project.",
+                    "content": "Quickly snap photos of the work that need to be done, create rooms, add dimensions and automatically organize work by trades.  New construction?  Simply upload project files and ManyBuild does the rest."  
+                },
+                {
+                    "title": "Bid Faster",
+                    "hook":  "Construction marketplace designed for everyone.",
+                    "content": "The sooner you post the project to the marketplace the faster the bid responses arrive.  Request for bid are instantly created specific to each project.  With ManyBuild’s growing community of contractors your start date is simply one click away. "  
+                },
+                {
+                    "title": "Manage Better",
+                    "hook":  "Is you project too successful?",
+                    "content": "ManyBuild intelligently alerts, tracks and communicates new projects available for bidding as well as the bids as they are submitted. Do not get stuck checking in, follow-up instead and get to contract faster."  
+                },
+                {
+                    "title": "Growing Feature List…",
+                    "hook":  "It starts with an idea.",
+                    "content": "ManyBuild is a community forward platform built to augment the talents of the building community.  While other technology platforms are innovating and optimizing for supply chains, ManyBuild is optimizing for the people."  
+                }
+            ]
         }
-    ]
+    }
 }
 
 

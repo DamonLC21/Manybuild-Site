@@ -1,0 +1,75 @@
+.project-creation {
+    border-top: 2px solid;
+    background: linear-gradient(#ffffff, 70%, #253551);
+    padding: 30px;
+    border-image: radial-gradient(#253551, rgb(255, 255, 255)) 1;
+}
+
+
+.project-creation #project-logo {
+    width: 60px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+
+.project-creation h2 {
+    font-size: 22px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 4em;
+}
+
+.manybuild-font-yellow {
+    color:  #f8b612;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.info-card {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 30px 15px rgba(59, 77, 100, 0.05);
+    border-radius: 5px;
+    background-color: white;
+    transition: .5s;
+    border-bottom: 4px solid transparent;
+    
+}
+
+.info-card:hover {
+    transform: translateY(-5%);
+    transition: 1s;
+    border-bottom-color: #f8b612;
+}
+
+.card-title {
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: .20px;
+    line-height: 1.2em;
+    margin-bottom: .4em;
+}
+
+.card-hook {
+    font-size: 18px;
+    color: #253551;
+    margin-bottom: 20px;
+}
+
+.verticle-break {
+    width: 2px;
+    height: 150px;
+    background-color: #f8b612;
+    border-radius: 30%;
+}
