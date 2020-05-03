@@ -1,6 +1,8 @@
 import React from 'react'
 import vid from '../../ManyBuild.MOV'
 import logo from '../../MBlogo.png'
+import {Link} from 'react-router-dom'
+
 
 
 export default function Hero({hero: {heading, quote, subtext, button}}) {
@@ -13,7 +15,9 @@ export default function Hero({hero: {heading, quote, subtext, button}}) {
                 <h1>{heading}</h1>
                 <p className="quote">{quote}</p>
                 <p className="subtext">{subtext}</p>
-                <button>{button}</button>
+                <Link to='/contact'>
+                  <button>{button}</button>
+                </Link>
               </div>
             </section>
           </div>

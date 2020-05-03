@@ -1,4 +1,4 @@
-h1  {
+.hero h1  {
     font-size: 3rem;
     font-family: stencil-std, sans-serif;
     font-weight: 900;
@@ -54,6 +54,7 @@ h1  {
     color: #f8b612;
     font-size: x-large;
     animation: fly-right 1.8s ease-in-out;
+    font-style: italic;
   }
   
   #hero-logo{

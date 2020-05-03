@@ -1,0 +1,56 @@
+
+footer{
+    background-color: #263c5a;
+}
+
+.svg-container{
+    height: 100px;
+    overflow: hidden;
+    margin-top: -60px;
+    width: 100%;
+    position: absolute;
+}
+
+.wave{
+    height: 100%; 
+    width: 100%;
+}
+
+.wave-path{
+    stroke: none;
+    fill: #263c5a;
+}
+
+.footer-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(171, 171, 171);
+    margin: 0 auto;
+    padding: 3em;
+    width: 60%;
+}
+
+.footer-content img{
+    width: 100px;
+}
+
+.footer-content a{
+    color:  rgb(171, 171, 171);
+}
+
+.copyright{
+    text-align: center;
+    padding: 1.5em;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    font-size: smaller;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 12%;
+    color: #f8b612;
+}

@@ -1,0 +1,251 @@
+.about-hero{
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 20px 20px -15px rgb(255, 255, 255);
+}
+
+.about-heading h1 {
+    font-size: 12vw;
+    color: rgba(128, 128, 128, 0.392);
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: .2em;
+    text-indent: 0.2em;
+}
+
+.about-overlay {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background-color: #010710bd;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+  }
+
+.about-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-heading p{
+    width: 400px;
+    text-shadow: 2px 2px rgb(26, 26, 26);
+}
+
+.about-hero-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about-container{
+    height: 100vh;
+    position: relative;
+    padding: 4em;
+}
+
+.about-container::after {
+    content: "";
+    background-image: url('../wall.jpeg');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.about-container p{
+    border-radius: 6px;
+}
+
+.our-story {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: #edf1f4;
+    margin-top: -17em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    box-shadow: 0px 20px 20px -15px rgb(158, 158, 158);
+    padding: 2em;
+}
+
+.our-content-section-1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    margin: 4em;
+    box-shadow: 0px 20px 30px -28px rgb(158, 158, 158);
+    border-radius: 6px;
+}
+
+.our-story-content{
+    width: 500px;
+}
+
+.our-story-image{ 
+    overflow: hidden;
+    width: 450px;
+    height:300px;
+    box-shadow: 0px 2px 20px -8px rgb(158, 158, 158);
+    border-radius: 6px;
+    margin-bottom: 2em;
+}
+
+.our-story-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-image {
+    margin-top:4em;
+    width: 560px;
+    height:300px;
+}
+
+.p-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -10px;
+}
+
+.our-content-section-2 {
+    width: 90%;
+    margin: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.our-content-section-2 a{
+    text-decoration: none;
+}
+.our-vision-card{
+    width: 400px;
+    padding: 2em;
+    background-color: #f8b712af;
+    height: max-content;
+    color: #263c5a;
+}
+.our-vision-card p {
+    color: rgb(45, 45, 45);
+}
+
+.our-mission-card{
+    width: 400px;
+    padding: 2em;
+    color: white;
+    height: max-content;
+    background-color: #263c5aa8;
+    text-shadow: 1px 1px rgb(60, 60, 60);
+}
+
+.p-link{
+    text-align: center;
+    color: #263c5a;
+    font-size: larger;
+    border: 1px solid #f8b612;
+    padding: .5em;
+}
+
+.p-link:hover{
+    color: #f8b612;
+    border: 1px solid #263c5a;
+}
+
+.cards-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resize-cards{
+    height: 600px;
+    margin-bottom: 4em;
+}
+
+.about-container-2{
+    height: max-content;
+    margin: 10em auto;
+    width: 90%;
+}
+
+.about-container-2 .title{
+    color: rgba(28, 28, 28, 0.884);
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: .2em;
+    text-indent: 0.2em;
+    margin-bottom: 2em;
+}
+
+.continued {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.continued-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.continued-card p{
+    width: 500px;
+    background-color: #ffe39caf;
+    padding: 2em;
+}
+
+.continued-card img {
+    width: 100%
+}
+
+.continued-image-container{
+    overflow: hidden;
+    width: 50%;
+    height: 380px;
+}
+
+.core-values-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6em;
+}
+
+.core-values-list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    list-style-type: none;
+}
+
+.core-values-list li{
+    width: 300px;
+    padding: 2em;
+}
+
+.core-values-container button {
+    margin: auto;
+}
+
+.core-values-container a {
+    margin: auto;
+}

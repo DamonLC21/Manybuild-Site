@@ -7,6 +7,13 @@
 @import './stylesheets/ProjectCreation.css';
 @import './stylesheets/Contractors.css';
 @import './stylesheets/Roadmap.css';
+@import './stylesheets/Technology.css';
+@import './stylesheets/Footer.css';
+@import './stylesheets/Looking.css';
+@import './stylesheets/Quote.css';
+@import './stylesheets/Team.css';
+@import './stylesheets/Contact.css';
+@import './stylesheets/About.css';
 
 *{
   margin: 0;
@@ -81,6 +88,11 @@ p {
 .landing-buttons {
   display: flex;
   justify-content: space-between;
+}
+
+.gradient {
+  background: linear-gradient(#fff, 99.9%,  #f8b612);
+  padding-bottom: 12em
 }
 
 @keyframes welcome {

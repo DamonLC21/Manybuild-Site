@@ -1,0 +1,76 @@
+.technology-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    margin: 5em auto;
+    margin-bottom: 12em;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.technology-content {
+    width: 500px;
+    line-height: 80px;
+}
+
+.technology-content h2{
+    font-size: 1.8em;
+}
+
+.technology-content h3{
+    position: relative;
+}
+
+.technology-content h3::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    display:block;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #f8b612;
+}
+
+.technology-content p {
+    color: rgb(79, 79, 79)
+}
+
+.technology-video{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: max-content;
+    position: relative;
+    box-shadow: 0px 10px 25px -15px rgb(158, 158, 158);
+}
+
+.technology-video video{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.technology-video::after {
+    content: "";
+    background: #f8b612;
+    width: 300px;
+    height: 1px;
+    position: absolute;
+    bottom: -20px;
+    display: block;
+}
+
+.technology-container button{
+    margin-top: 2em;
+    box-shadow: 0px 20px 20px -15px rgb(158, 158, 158);
+}
+/* 
+@media only screen and (min-width: 1700px){
+    .technology-container{
+        width: 100%;
+        background-color: blue;
+    }
+} */

@@ -1,0 +1,30 @@
+.walt-quote{
+    width: 80%;
+    text-align: center;
+    font-style: italic;
+    margin: 10em auto;
+    color: #263c5a;
+    border-bottom: 2px solid;
+    border-image: radial-gradient(#253551, rgb(255, 255, 255)) 1;
+    padding-bottom: 10em;
+}
+
+.walt-quote h2 {
+    font-size: 2vw;
+}
+
+.walt-quote h2::after {
+    content: "- Walt Disney";
+    font-size: 15px;
+}
+
+.facts-button {
+    color: #263c5a;
+    margin-top: 100px;
+    border: 1px solid #f8b612;
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+    padding: 20px;
+    font-size: 20px;
+}

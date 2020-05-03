@@ -3,10 +3,10 @@ import Navbar from '../Navbar'
 import Hero from './Hero'
 import { useHistory, useRouteMatch } from 'react-router-dom'
 
-export default function Header({hero, navbar, setLang}) {
-    let {params: {lang}} = useRouteMatch()
+export default function Header({hero, navbar, lang, setLang}) {
+    let {params: {language}} = useRouteMatch()
 
-    if(lang === "espanol"){
+    if(language === "espanol"){
         setLang("espanol")
     }
     else{
@@ -14,9 +14,8 @@ export default function Header({hero, navbar, setLang}) {
     }
 
     return (
-        <header>
-            <Navbar navbar={navbar}/>
+        <section>
             <Hero hero={hero} />
-        </header>
+        </section>
     )
 }

@@ -1,9 +1,9 @@
 .divider {
     border-top: 2px solid;
+    border-image: radial-gradient(#253551, rgb(255, 255, 255)) 1;
     width: 90%;
     margin: 10em auto;
     padding-top: 50px;
-    border-image: radial-gradient(#253551, rgb(255, 255, 255)) 1;
 }
 
 .divider h2 {

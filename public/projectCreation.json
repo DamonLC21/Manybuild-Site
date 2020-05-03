@@ -1,7 +1,7 @@
 {
     "data": {
         "english": {
-            "navbar": ["Home", "About", "Road Map", "Team", "Contact"],
+            "navbar": ["Home", "About", "Facts", "Team", "Contact"],
             "hero": {
                 "heading": "Manybuild",
                 "quote": "“With the right team we can build anything”",
@@ -29,10 +29,82 @@
                     "hook":  "It starts with an idea.",
                     "content": "ManyBuild is a community forward platform built to augment the talents of the building community.  While other technology platforms are innovating and optimizing for supply chains, ManyBuild is optimizing for the people."  
                 }
+            ],
+            "team": [
+                {
+                    "name": "Alejandro Daniel Lovera",
+                    "image": "./images/alex.jpg",
+                    "type": "executive",
+                    "title": "Chief Executive Officer/Founder",
+                    "bio": "Alejandro is a third generation builder. He founded ManyBuild together with Ben Maxwell and Stefan Norton with the goal to make the world of construction a better place. Growing up in a family of contractors and architects on the island of Aruba Alejandro knows what it takes to be successful in this industry. Alejandro graduated from Daniels College of Business with a minor in Financial Analysis in Real Estate and Legal Studies. Alex’s business accomplishments include: Identifying, underwriting and acquiring residential and commercial properties; Leading capital deployment for three HM Capital's funds; Managed the acquisition of $10,000,000 of real estate; A redevelopment project in the Park Hill Community, as well as Building homes across the Greater Denver Area ManyBuild is on a mission to create a success platform for its members. Some well financed corporation are making money on the backs of their users through reducing accessibility. Alex has found success with ManyBuild through increasing accessibility. Alex believes, “if you build on a foundation of equity everyone succeeds.”"
+                },
+                {
+                    "name": "Ben Maxwell",
+                    "image": "./images/ben.jpg",
+                    "type": "executive",
+                    "title": "Angel Investor/Co-Founder",
+                    "bio": "Ben is a third generation entrepreneur with over 20 years of experience in the construction industry. He launched his first investment fund back in 2001 and has since completed over $250MM in construction projects with over $75MM in assets under management in the Greater Denver Area. Ben brings his valuable strengths in finance, operations, execution, real estate and raising capital to ManyBuild as well as creating the first iteration of the ManyBuild platform."
+                },
+                {
+                    "name": "Stefan Norton",
+                    "image": "./images/stefan.jpg",
+                    "type": "executive",
+                    "title": "Chief Operations Officer/Co-Founder",
+                    "bio": "Stefan started as a community organiser as a pre-teen and has never stopped his optimization efforts. He first met Alex at Denver Startup Week. Alex asked Stefan to assist some colleagues of his at another firm with their digital transformation. Several very long conversations later Stefan became a co-founder of ManyBuild and helped launch ManyBuild’s first app. Stefan graduated from Central Connecticut State University and holds a Masters from Columbia University in the City of New York. Stefan’s study of Industrial Organizational Psychology and MBA have given him the expertise to build operational excellence with a spectrum of business: Large multinational corporations Microsoft, RE/MAX, and Charles Schwab; Market sectors: Oil & Gas, Education, Banking, Non-Profit; emergent business, boutique firms and startups Stefan’s focus has always been to develop core competencies within organisations and individuals. With every decision Stefan asks, “How does this promote dignity.”"
+                },
+                {
+                    "name": "Jose Rivera",
+                    "image": "./images/jose.jpg",
+                    "type": "executive",
+                    "title": "Chief Culture Officer/Founding Member",
+                    "bio": "Jose has made his living in the helping professions. He is a master in finding talent, understanding the needs of our stakeholders, and just good at everything. Jose joined ManyBuild when we were in need of a growth spurt."
+                },
+                {
+                    "name": "Diana Maldonado",
+                    "image": "./images/diana.jpg",
+                    "type": "executive",
+                    "title": "Chief Sales Officer/Founding Member",
+                    "bio": "Diana leads our business development here at ManyBuild. As Chief Sales Officer she directs the acquisition and development of all stakeholders to ManyBuild."
+                },
+                {
+                    "name": "Peter Taggart",
+                    "title": "Director of Engineering/Founding Member",
+                    "image": "./images/peter-s.jpg",
+                    "type": "engineer",
+                    "bio": "Peter is a full-stack software engineer. He has experience getting startups from concept to working products. His expertise leading companies through engineering challenges that are needed to meet customers needs continues to be a valued asset to ManyBuild. Peter is currently leading engineering, cybersecurity, and blockchain efforts at ManyBuild."
+                },
+                {
+                    "name": "Juan Juarez",
+                    "image": "./images/juan-s.jpg",
+                    "type": "engineer",
+                    "title": "Lead Developer",
+                    "bio": "Juan is a full stack developer with a passion for design. His expertise is in U/X & U/I design which makes him a rare find as a programmer."
+                },
+                {
+                    "name": "Jared Stromberg",
+                    "image": "./images/jared.jpg",
+                    "type": "engineer",
+                    "title": "Lead Engineer/Founding Member",   
+                    "bio": "Jared's background in the building trades gives ManyBuild a valued perspective on the customer journey. Jared recently joined ManyBuild as a software developer working on the customer experience. He is a strong advocate by always looking to do right by the customer. Experience with startups has pushed the team to seek excellence and break the bonds of 'good enough.'"
+                },
+                {
+                    "name": "John Lucero",
+                    "image": "./images/johnLucero.jpg",
+                    "type": "advisor",
+                    "title": "Advisor",
+                    "bio": "John Lucero served as the Deputy Director of Denver’s Office Economic Development under three mayors, having led the City through recovery during the most recent economic recession. He has several hotel and residential mixed-use developments under his belt coupled with over 25 years of real estate brokerage. Buoyed by this experience and career in community development ManyBuild will be able to leverage his expertise to deliver on its vision of becoming a community forward real estate development platform."
+                },
+                {
+                    "name": "Levi Wright",
+                    "title": "Advisor",
+                    "image": "./images/leviWrigh.jpg",
+                    "type": "advisor",
+                    "bio": "Levi Wright has been working as a project manager for almost a decade and has worked with some of the biggest real estate development firms in Colorado."
+                }
             ]
         },
         "espanol": {
-            "navbar": ["Home", "About", "Road Map", "Team", "Contact"],
+            "navbar": ["Home", "About", "Facts", "Team", "Contact"],
             "hero": {
                 "heading": "Manybuild",
                 "quote": "“With the right team we can build anything”",
