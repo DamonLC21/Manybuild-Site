@@ -3,7 +3,7 @@ import './App.css';
 import Mission from './components/Home/Mission';
 import Explore from './components/Home/Explore';
 import ProjectCreation from './components/Home/ProjectCreation';
-import { Route, useRouteMatch } from 'react-router-dom';
+import { Route, useRouteMatch, Redirect, Switch } from 'react-router-dom';
 import Header from './components/Home/Header';
 import Landing from './components/Landing';
 import Contractors from './components/Home/Contractors';
@@ -17,51 +17,58 @@ import Navbar from './components/Navbar';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import About from './components/About/About';
+import Facts from './components/Facts'
+
 
 function App() {
   const [content, setContent] = useState({})
   const [cardInfo, setCardInfo] = useState([])
-  const [team, setTeam] = useState([])
-  const [lang, setLang] = useState("english")
+  const [lang, setLang] = useState("")
 
   useEffect(() => {
+    if(lang){
+      localStorage.setItem("language", lang)
+    }
     fetch('/projectCreation.json')
       .then(response => response.json())
       .then(({data}) => {
         let content = (lang === "english") ? data.english : data.espanol
         setContent(content)
-        setCardInfo(content.projectCreation)
-        setTeam(content.team)
+        setCardInfo(content.projectCreation) 
+        if(localStorage.language && !lang){
+          setLang(localStorage.language)
+        }
       })
   }, [lang])
   
   return (
     <>
-      <Route exact path="/">
-        <Landing />
-      </Route>
-        {content.navbar ? <Navbar navbar={content.navbar} lang={lang}/> : null}
-      <Route path="/home/:language">
-        {content.hero ? <Header hero={content.hero} navbar={content.navbar} lang={lang} setLang={setLang}/> : null}
-        <Explore />
-        <Mission />
-        <Contractors />
-        <Roadmap />
-        <ProjectCreation cardInfo={cardInfo} />
-        <SVG />
-        <section className="gradient">
-          <Quote />
-          <Technology />
-          <LookingForWork />
-        </section>
-        {/* <div style="height: 100px;overflow: hidden;margin-top: -60px;position: absolute;width: 100%;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C217.55,129.77 298.24,-15.28 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none;fill: #263c5a;"></path></svg></div> */}
-      </Route>
-
-      <Route exact path="/team" render={(props) => <Team team={team} />} />
-      <Route exact path="/contact" render={(props) => <Contact />} />
-      <Route exact path="/about" render={(props) => <About />} />
-
-      <Footer />
+      {lang ? <Navbar navbar={content.navbar} lang={lang}/> : null}
+      <Switch>
+        <Route exact path="/">
+          <Landing />
+        </Route>
+        <Route exact path="/home/:language">
+          {content.hero ? <Header hero={content.hero} navbar={content.navbar} lang={lang} setLang={setLang}/> : null}
+          <Explore {...content.explore} />
+          <Mission {...content.mission}/>
+          {content.contractors ? <Contractors {...content.contractors} /> : null}
+          <Roadmap roadmap={content.roadmap} />
+          <ProjectCreation cardInfo={cardInfo} />
+          <SVG />
+          <section className="gradient">
+            <Quote />
+            <Technology />
+            <LookingForWork />
+          </section>
+        </Route>
+        <Route exact path="/team" render={(props) => <Team team={content.team} /> }/> 
+        <Route exact path="/contact" render={(props) => <Contact />} />
+        <Route exact path="/about" render={(props) => <About />} />
+        <Route exact path="/facts" render={(props) => <Facts />} />
+        <Redirect to={`/home/${lang}`} />
+      </Switch>
+      {lang ? <Footer /> : null}
     </>
   );
 }

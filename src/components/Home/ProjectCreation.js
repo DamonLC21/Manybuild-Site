@@ -2,7 +2,7 @@ import React, {Fragment} from 'react'
 import logo from '../../MBlogo.png'
 
 
-export default function ProjectCreation({cardInfo}) {
+export default function ProjectCreation({cardInfo=[]}) {
 
     const showCards = cardInfo.map((card, i) => (
         <Fragment key={i}>

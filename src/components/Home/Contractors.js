@@ -4,10 +4,10 @@ import contractors from '../../contractors.jpeg'
 import subcontractors from '../../subcontractors.jpeg'
 
 
-export default function Contractors() {
+export default function Contractors({title, general, sub}) {
     return (
         <section className='divider'>
-            <h2>What We Do</h2>
+            <h2>{title}</h2>
             <section>
                 <ul className="contractors">
                     <li className="contractor-card-left">
@@ -21,25 +21,25 @@ export default function Contractors() {
                             </div> 
                         </ScrollAnimation>
                         <div className='content-section'>
-                            <h3>General Contractors</h3>
+                            <h3>{general.heading}</h3>
                             <p>
-                                With ManyBuild you can post your project to our marketplace and we will handle the rest! 
+                                {general.s1}
                                 <br /> <br />
-                                Get matched with over 385+ subcontractors in our network to receive bids for your next project. 
+                                {general.s2}
                                 <br /> <br />
-                                Our users have been able to save 6-10% on average.
+                                {general.s3}
                             </p>
                         </div>
                     </li>
                     <li className="contractor-card">
                         <div className='content-section'>
-                            <h3>Subcontractors</h3>
+                            <h3>{sub.heading}</h3>
                             <p>
-                                Register your company with us today to get access to new construction and remodel projects in your area.  
+                                {sub.s1}
                                 <br /> <br />
-                                Don’t have a company registered yet? 
-                                <br /> <br /> 
-                                No problem our team will help you get your business started and connect you with your very first project.
+                                {sub.s2}
+                                <br /> <br />
+                                {sub.s3}
                             </p>
                         </div>
                         <ScrollAnimation 

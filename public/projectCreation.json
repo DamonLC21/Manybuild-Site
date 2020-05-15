@@ -8,6 +8,57 @@
                 "subtext": "Contact us today to have us manage your construction bidding process with access to over 385+ subcontractors. Close to $1,000,000 in construction projects awarded in the past two months!",
                 "button": "Learn More"
             },
+            "explore": {
+                "title": "Explore Our Marketplace",
+                "button": "Marketplace"
+            },
+            "mission": {
+                "heading": "Connect with contractors in your area, Bid on work, Manage your projects, Schedule more construction.",
+                "p1": "ManyBuild is a community forward construction platform built for general contractors to connect with subcontractors. By creating a platform that brings the construction community together we believe you can build anything.",
+                "p2": " Planning, Budgeting, Bidding, Scheduling and Communications are unified into an easy point and click, replacing hundreds of thousands of dollars in software and overhead."
+            },
+            "contractors": {
+                "title": "What We Do", 
+                "general": {
+                    "heading": "General Contractors",
+                    "s1": "With ManyBuild you can post your project to our marketplace and we will handle the rest!",
+                    "s2": "Get matched with over 385+ subcontractors in our network to receive bids for your next project.",
+                    "s3": "Our users have been able to save 6-10% on average."
+                },
+                "sub": {
+                    "heading": "Subcontractors",
+                    "s1": "Register your company with us today to get access to new construction and remodel projects in your area.",
+                    "s2": "Don’t have a company registered yet? ",
+                    "s3": "No problem our team will help you get your business started and connect you with your very first project."
+                }
+            },
+            "roadmap": [
+                {
+                    "heading": "Marketplace",
+                    "p1": "Responding to an ever growing and evolving market ManyBuild launched its marketplace in early 2019.  ManyBuild’s Marketplace early success has been mostly attributed to it’s “community forward” approach.  By processing all of the construction plans, photos, and scopes we are able to access a wider market of construction businesses that are looking to grow.",
+                    "p2": "Opportunity for profit in construction is growing just as fast as the complexity.  Within the first several weeks of launch over $500,000 worth of work has been awarded through our marketplace."
+                },
+                {
+                    "heading": "Bidding",
+                    "p1": "The way people consume information is moving from the paper pages to the screen.  Construction companies must adapt quickly or risk getting left out of the bidding process.  Current software solutions are confusing or requires hiring staff dedicated to  managing the extra system.",
+                    "p2": "Our one tap bidding solution will allow our users to quickly submit bids for projects.  Builders can quickly customize each bid using our CSI standardized database with over 6,000+ work outcomes to fit within any project’s scope, size, and budget."
+                },
+                {
+                    "heading": "Scheduling",
+                    "p1": "Whether you run large scale commercial projects, manage multiple new builds or have a remodel to complete under a tight deadline; knowing when things should happen is half the battle.  ",
+                    "p2": "ManyBuild’s smart scheduling solution takes in all available public permitting information and creates a schedule that focus’ your teams efforts  to complete what is necessary to get through each inspection. Go from concept to completion in a easy, trackable and verifiable way."
+                },
+                {
+                    "heading": "Budgeting",
+                    "p1": "Keep track of construction budgets as a project progresses can be very time consuming. Our budgets and schedules are linked so that when your team in the field marks something as completed; the schedule automatically updates and flows all the way through to your budgets. ",
+                    "p2": "No more spending hours every week reconciling, updating and verifying work has been completed."
+                },
+                {
+                    "heading": "Accounting & Payments",
+                    "p1": "Construction projects always require their own set of bank accounts, checks, and bookkeeping. Current software solutions simply layer traditional accounting features but are not fully embedded into the operations of construction management. ManyBuild will be able to standardize it’s accounting solution from the beginning, receiving bids from subcontractors to issuing payments and construction draws.",
+                    "p2": "Quickly view a construction task update, with one click,  see the photo of the work completed together with the updated budget and process the payment through our platform."
+                }
+            ],
             "projectCreation": [
                 {
                     "title": "Create Projects",
@@ -88,13 +139,6 @@
                     "bio": "Jared's background in the building trades gives ManyBuild a valued perspective on the customer journey. Jared recently joined ManyBuild as a software developer working on the customer experience. He is a strong advocate by always looking to do right by the customer. Experience with startups has pushed the team to seek excellence and break the bonds of 'good enough.'"
                 },
                 {
-                    "name": "John Lucero",
-                    "image": "./images/johnLucero.jpg",
-                    "type": "advisor",
-                    "title": "Advisor",
-                    "bio": "John Lucero served as the Deputy Director of Denver’s Office Economic Development under three mayors, having led the City through recovery during the most recent economic recession. He has several hotel and residential mixed-use developments under his belt coupled with over 25 years of real estate brokerage. Buoyed by this experience and career in community development ManyBuild will be able to leverage his expertise to deliver on its vision of becoming a community forward real estate development platform."
-                },
-                {
                     "name": "Levi Wright",
                     "title": "Advisor",
                     "image": "./images/leviWrigh.jpg",
@@ -106,33 +150,11 @@
         "espanol": {
             "navbar": ["Home", "About", "Facts", "Team", "Contact"],
             "hero": {
-                "heading": "Manybuild",
+                "heading": "Espanol",
                 "quote": "“With the right team we can build anything”",
                 "subtext": "Contact us today to have us manage your construction bidding process with access to over 385+ subcontractors. Close to $1,000,000 in construction projects awarded in the past two months!",
                 "button": "Learn More"
-            },
-            "projectCreation": [
-                {
-                    "title": "Create Projects",
-                    "hook":  "It all begins with a project.",
-                    "content": "Quickly snap photos of the work that need to be done, create rooms, add dimensions and automatically organize work by trades.  New construction?  Simply upload project files and ManyBuild does the rest."  
-                },
-                {
-                    "title": "Bid Faster",
-                    "hook":  "Construction marketplace designed for everyone.",
-                    "content": "The sooner you post the project to the marketplace the faster the bid responses arrive.  Request for bid are instantly created specific to each project.  With ManyBuild’s growing community of contractors your start date is simply one click away. "  
-                },
-                {
-                    "title": "Manage Better",
-                    "hook":  "Is you project too successful?",
-                    "content": "ManyBuild intelligently alerts, tracks and communicates new projects available for bidding as well as the bids as they are submitted. Do not get stuck checking in, follow-up instead and get to contract faster."  
-                },
-                {
-                    "title": "Growing Feature List…",
-                    "hook":  "It starts with an idea.",
-                    "content": "ManyBuild is a community forward platform built to augment the talents of the building community.  While other technology platforms are innovating and optimizing for supply chains, ManyBuild is optimizing for the people."  
-                }
-            ]
+            }
         }
     }
 }

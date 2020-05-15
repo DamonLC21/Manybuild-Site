@@ -1,0 +1,149 @@
+.facts-content{
+    width: 80%;
+    margin: 6em auto;
+}
+.facts-section-1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.facts-card h2{
+    display: inline-block;
+    width: 350px;
+    font-size: 40px;
+    margin-bottom: .5em;
+}
+
+.CircularProgressbar {
+    box-shadow: 0 0 30px 15px rgba(12, 16, 21, 0.077);
+    border-radius: 50%;
+}
+
+.right {
+    margin-top: -80px;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.right h2, .right h3{
+    display: inline-block;
+    width: 200px;
+}
+
+.right .important{
+    margin-top: 12px;
+    font-size: 30px;
+    width: 600px;
+}
+
+#progress-resize {
+    width: 280px;
+}
+
+.facts-card{
+    width: 600px;
+    font-size: 16px;
+}
+
+.facts-card p{
+    display: inline-block;
+    width: 450px;
+}
+
+.facts-section-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 8em auto;
+}
+
+.facts-section-2 h2{
+    font-size: 30px;
+}
+
+.facts-section-2 ol{
+    display: flex;
+    margin-top: 40px;
+  padding: 0;
+  counter-reset: li;
+  list-style: none;
+  justify-content: space-between;
+}
+.facts-section-2 ol li {
+    overflow: hidden;
+    position: relative;
+    padding-left: 50px;
+    min-height: 35px;
+    margin: 5px 0px;
+    padding-top: 4px;
+  }
+
+.facts-section-2 ol li::before {
+        position: absolute;
+      top: 0px;
+      left: 0px;
+      border: 1px solid #000;
+      background-color: #253551;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: #f8b612;
+      content: counter(li);
+      counter-increment: li;
+  }
+
+.facts-section-3 {
+    display: flex;
+    padding: 80px;
+    flex-flow: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.fact-listing ul {
+    list-style-type: none;
+}
+
+.fact-card-transparent {
+    padding: 20px;
+    background-color: #f8b712af;
+}
+
+.blue {
+    background-color: #263c5aa8;
+    text-shadow: .5px .5px rgb(60, 60, 60);
+    color: white;
+}
+
+.fact-closing{
+    width: 100%;
+    margin-bottom: 10em;
+}
+
+.fact-closing .title{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.facts-p-list{
+    display: flex;  
+    width: 100%;
+    margin-top: 3em;
+    justify-content: space-between;
+}
+
+.facts-p-list > div{
+    width: 33.3%
+}
+
+
+
+.facts-p-list h2 {
+    width: 160px;
+    margin: 2em auto;
+}

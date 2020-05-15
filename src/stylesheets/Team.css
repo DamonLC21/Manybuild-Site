@@ -1,16 +1,21 @@
 .team-hero{
-    display: flex;
     height: 150px;
     background-color: #f8b612;
     color: #263c5a;
     align-items: flex-end;
-    padding: 100px;
+    padding: 6em;
     justify-content: center;
 }
 
 .team-hero h1 {
+    font-size: 9vw;
+    color: rgba(79, 79, 79, 0.392);
     font-family: sans-serif;
-    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .2em;
+    text-indent: 0.2em;
+    margin-top: 40px;
+    text-transform: uppercase; 
 }
 
 .team-container{

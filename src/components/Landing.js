@@ -16,6 +16,7 @@ export default class Landing extends Component {
         setTimeout(() => this.setState({first: false, second: true}), 3000)
         setTimeout(() => this.setState({second: false, third: true}), 6000)
         setTimeout(() => this.setState({third: false, done: true}), 8500)
+        localStorage.removeItem('language')
     }
 
     render(){

@@ -2,13 +2,13 @@ import React, {useState} from 'react'
 import logo from '../MBlogo.png'
 import {Link} from 'react-router-dom'
 
-export default function Team({team}) {
+export default function Team({team=[]}) {
 
     const[activeCard, setActiveCard] = useState({})
 
     const handleHover = (person) => setActiveCard(person)
 
-    const filterType = (type) => team.filter(person => person.type === type)
+    const filterType = (type) => team.filter(person => person.type === type) 
 
     const createCard = ({name, image, title, bio}, i) => (
         <div key={i} 
@@ -31,7 +31,7 @@ export default function Team({team}) {
     return (
         <>
             <div className="team-hero">
-                <h1>Meet The Team</h1>
+                <h1>Team</h1>
             </div>
             <section className="team-container">
                 <h2>Executive Team</h2>

@@ -9,6 +9,7 @@ footer{
     margin-top: -60px;
     width: 100%;
     position: absolute;
+    z-index: 0;
 }
 
 .wave{
@@ -25,19 +26,20 @@ footer{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
     color: rgb(171, 171, 171);
     margin: 0 auto;
     padding: 3em;
     width: 60%;
+    text-align: center;
 }
 
 .footer-content img{
-    width: 100px;
+    height: 100px;
 }
 
 .footer-content a{
     color:  rgb(171, 171, 171);
+    text-decoration: none;
 }
 
 .copyright{
@@ -51,6 +53,20 @@ footer{
 .icons{
     display: flex;
     justify-content: space-evenly;
-    width: 12%;
+    width: 15%;
     color: #f8b612;
+    margin-top: 15px;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav{
+    text-align: center;
+    list-style-type: none;
+    line-height: 1.4em;
+    list-style-type: none;
 }

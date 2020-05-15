@@ -69,6 +69,11 @@ export default function LookingForWork() {
                     </li>
                 </ScrollAnimation>
            </ul>
+           <section className="in-touch">
+                <h2>Get in Touch - Se Habla Español</h2>
+                <p>SCHEDULE AN IN-PERSON MEETING TO DISCUSS YOUR PROJECT AND MEET THE FOUNDERS.</p>
+                <Link to="/contact"><button>Contact</button></Link>
+           </section>
         </section>
     )
 }

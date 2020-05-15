@@ -15,38 +15,40 @@
     animation: wiggle 0.5s;
 }
 
-nav ul {
+#custom-nav ul {
     display: flex;
     width: 30%;
     list-style-type: none;
     justify-content: space-evenly;
 }
 
-nav a {
+#custom-nav a {
     color: white;
     padding-bottom: 4px;
     text-decoration: none;
 }
 
-nav a:active {
+#custom-nav a:active {
     color: #f8b612;
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-nav a:hover {
+#custom-nav a:hover {
     cursor: pointer;
     color: #f8b612;
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-nav {
+#custom-nav {
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 2;
     width: 100%;
+    /* background-color: #263c5a; */
 }
   
-.nav-container {
+#nav-container {
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -55,4 +57,18 @@ nav {
     color: white;
     padding: 20px;
 }
+
+.scroll-to-button{
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1;
+}
   
+#back-to-top-anchor{
+    position: absolute;
+}
+
+#arrow-up{
+    background-color: #f8b612;  
+}
