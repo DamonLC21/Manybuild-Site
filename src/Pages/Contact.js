@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormGroup, FormControl, TextField } from '@material-ui/core';
+import {TextField } from '@material-ui/core';
 import img from '../estimates.jpeg'
 import Button from '@material-ui/core/Button';
 import Send from '@material-ui/icons/Send';
@@ -17,7 +17,7 @@ export default function Contact() {
                     </div>
                     </section>
                 </div>
-                <img className="contact-hero-image" src={img} />
+                <img className="contact-hero-image" src={img} alt="manybuild" />
             </section>
             <section className="content-container">
                 <form className="contact-form" noValidate autoComplete="on">

@@ -32,7 +32,7 @@ export default function LookingForWork({title, steps=[], contact={}}) {
                             <div className="eyebrow">
                                 <div className="speaker"></div>
                             </div>
-                            <img src={image} />
+                            <img src={image} alt="manybuild"/>
                         </div>
                         <div className="steps">
                             <h3>{step}</h3>

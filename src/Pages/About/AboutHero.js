@@ -11,7 +11,7 @@ export default function AboutHero() {
                     </div>
                 </section>
             </div>
-            <img className="about-hero-image" src={img} />
+            <img className="about-hero-image" src={img} alt="hero"/>
         </section>
     )
 }

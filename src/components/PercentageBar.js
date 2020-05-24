@@ -2,10 +2,8 @@ import React from 'react'
 import VisibilitySensor from 'react-visibility-sensor';
 import { easeQuadInOut } from "d3-ease";
 import AnimatedProgressProvider from "./AnimatedProgressProvider";
-import ChangingProgressProvider from "./ChangingProgressProvider";
 import {
     CircularProgressbar,
-    CircularProgressbarWithChildren,
     buildStyles
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";

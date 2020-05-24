@@ -16,9 +16,9 @@ export default function Team({team=[]}) {
             onMouseOver={() => handleHover({name, image, title, bio})}
         >
             <div className="circle">
-                <img src={image} />
+                <img src={image} alt="manybuild"/>
             </div>
-            <img src={logo} className="team-logo" />
+            <img src={logo} className="team-logo" alt="manybuild" />
             <h3>{name}</h3>
             <p>{title}</p>
         </div> 

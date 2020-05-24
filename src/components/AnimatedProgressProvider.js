@@ -13,7 +13,6 @@ class AnimatedProgressProvider extends React.Component {
   };
 
   componentDidMount() {
-      console.log(this.props)
     if (this.props.repeat) {
       this.interval = window.setInterval(() => {
         this.setState({

@@ -17,7 +17,7 @@ export default function AboutSection2() {
                     </p>
             </div>
             <div className="our-story-image p-image">
-                <img src={team_image} />
+                <img src={team_image} alt="manybuild"/>
             </div>
         </div>
         <div className="cards-right resize-cards">

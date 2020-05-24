@@ -2,7 +2,6 @@
 import {Link} from 'react-router-dom'
 import React from 'react';
 import Toolbar from '@material-ui/core/Toolbar';
-import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { useState, useEffect } from 'react';

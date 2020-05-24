@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 

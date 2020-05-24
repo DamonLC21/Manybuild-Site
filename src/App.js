@@ -1,45 +1,53 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import Mission from './components/Home/Mission';
-import Explore from './components/Home/Explore';
-import ProjectCreation from './components/Home/ProjectCreation';
-import { Route, useRouteMatch, Redirect, Switch } from 'react-router-dom';
-import Header from './components/Home/Header';
+import { Route,Redirect, Switch } from 'react-router-dom';
 import Landing from './Pages/Landing';
-import Contractors from './components/Home/Contractors';
-import Roadmap from './components/Home/Roadmap';
-import SVG from './components/Home/SVG'
-import Technology from './components/Home/Technology'
 import Footer from './components/Footer';
-import LookingForWork from './components/Home/LookingForWork';
-import Quote from './components/Home/Quote';
 import Navbar from './components/Navbar';
 import Team from './Pages/Team';
 import Contact from './Pages/Contact';
 import About from './Pages/About/About';
 import Facts from './Pages/Facts'
-
+import Home from './Pages/Home'
 
 function App() {
   const [content, setContent] = useState({})
-  const [cardInfo, setCardInfo] = useState([])
   const [lang, setLang] = useState("")
 
-  useEffect(() => {
+  useEffect(handleComponentUpdate, [lang])
+
+  function handleComponentUpdate(){
+    setLocalStorage()
+    fetchContent()
+  }
+
+  function setLocalStorage(){
     if(lang){
       localStorage.setItem("language", lang)
     }
-    fetch('/projectCreation.json')
-      .then(response => response.json())
-      .then(({data}) => {
-        let content = (lang === "english") ? data.english : data.espanol
-        setContent(content)
-        setCardInfo(content.projectCreation) 
-        if(localStorage.language && !lang){
-          setLang(localStorage.language)
-        }
-      })
-  }, [lang])
+  }
+
+  function fetchContent(){
+    fetch('/content.json')
+      .then(handleResponse)
+      .then(setSiteContent)
+  }
+
+  function setSiteContent({data}){
+    let content = (lang === "english") ? data.english : data.espanol
+    setContent(content)
+    setSiteLanguage()
+  }
+
+  function setSiteLanguage(){
+    if(localStorage.language && !lang){
+      setLang(localStorage.language)
+    }
+  }
+
+  function handleResponse(response){
+    return response.json()
+  }
   
   return (
     <>
@@ -49,22 +57,7 @@ function App() {
           <Landing />
         </Route>
         <Route exact path="/home/:language">
-          {content.hero ? (
-            <>
-              <Header hero={content.hero} navbar={content.navbar} lang={lang} setLang={setLang}/> 
-              <Explore {...content.explore} />
-              <Mission {...content.mission}/>
-              <Contractors {...content.contractors} />
-              <Roadmap roadmap={content.roadmap} />
-              <ProjectCreation cardInfo={cardInfo} />
-              <SVG />
-              <section className="gradient">
-                <Quote {...content.quote} />
-                <Technology {...content.technology}/>
-                <LookingForWork {...content.looking}/>
-              </section>
-            </>
-          ) : null }
+          {content.hero ? <Home content={content} lang={lang} setLang={setLang}/> : null }
         </Route>
         <Route exact path="/team" render={(props) => <Team team={content.team} /> }/> 
         <Route exact path="/contact" render={(props) => <Contact />} />

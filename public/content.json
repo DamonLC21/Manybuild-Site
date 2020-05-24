@@ -121,6 +121,11 @@
                     "button": "Contact"
                 }
             },
+            "about": {
+                "hero": {
+                    "title": "ABOUT"
+                }
+            },
             "team": [
                 {
                     "name": "Alejandro Daniel Lovera",

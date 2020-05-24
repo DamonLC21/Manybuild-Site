@@ -15,7 +15,7 @@ export default function Footer() {
                 </svg>
             </div>
             <div className="footer-content">
-                <img src={logo}/>
+                <img src={logo} alt="manybuild"/>
                 <div>
                     <h5>Location</h5>
                     <p> ManyBuild Inc <br/> 4045 N Pecos St <br/> Denver, CO 80211</p>

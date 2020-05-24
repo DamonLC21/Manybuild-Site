@@ -29,7 +29,7 @@ export default function About() {
                         This passion for our members effectively intersects expertise with the community. ManyBuild believes that what sustains a platform is promoting the dignity of every individual.  Choosing to specialize in a field means that you are completely devoted to it; that you will protect it as if it were your own. That is the energy that sets ManyBuild apart.
                         </p>
                         <div className="continued-image-container">
-                            <img src={squad} />
+                            <img src={squad} alt="manybuild"/>
                         </div>
                     </div>
                 </div>

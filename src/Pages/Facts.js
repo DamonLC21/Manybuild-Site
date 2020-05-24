@@ -1,16 +1,6 @@
 import React from 'react'
 import img from '../manybuild.jpg'
-import { easeQuadInOut } from "d3-ease";
-import AnimatedProgressProvider from "../components/AnimatedProgressProvider";
-import ChangingProgressProvider from "../components/ChangingProgressProvider";
-import {
-    CircularProgressbar,
-    CircularProgressbarWithChildren,
-    buildStyles
-  } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
 import ScrollAnimation from 'react-animate-on-scroll'
-import VisibilitySensor from 'react-visibility-sensor';
 import PercentageBar from '../components/PercentageBar';
 
 
@@ -25,7 +15,7 @@ export default function Facts() {
                         </div>
                     </section>
                 </div>
-                <img className="about-hero-image" src={img} />
+                <img className="about-hero-image" src={img} alt="manybuild"/>
             </section>
             <section className="facts-content">
                 <div className='facts-section-1'>
