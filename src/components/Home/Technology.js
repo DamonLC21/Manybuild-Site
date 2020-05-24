@@ -2,16 +2,16 @@ import React from 'react'
 import img from '../../manybuild_helmets.jpeg'
 import vid from '../../marketplace.mov'
 
-export default function Technology() {
+export default function Technology({title,subHeading1,subHeading2,p1,p2,p3}) {
     return (
         <section className="technology-container">
             <div className="technology-content">
-                <h2>Technology Contractors Love</h2>
-                <p>Build a flexible solution with ManyBuild’s first-of-its-kind  platform.</p>
-                <h3>What Is Flexibility, Anyway?</h3>
-                <p>We erased the confusing ways of the past and created a solution that address time and location-based needs, allowing companies and employees to speak the same language.</p>
-                <h3>Top Contractors use ManyBuild.</h3>
-                <p>Our customers are committed to succeeding in a flexible future. ManyBuild Solutions creates different ideas.</p>
+                <h2>{title}</h2>
+                <p>{p1}</p>
+                <h3>{subHeading1}</h3>
+                <p>{p2}</p>
+                <h3>{subHeading2}</h3>
+                <p>{p3}</p>
             </div>
             <div className="technology-video">
                 <video autoPlay loop src={vid}></video>

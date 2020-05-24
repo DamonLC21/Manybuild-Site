@@ -5,7 +5,7 @@ import Explore from './components/Home/Explore';
 import ProjectCreation from './components/Home/ProjectCreation';
 import { Route, useRouteMatch, Redirect, Switch } from 'react-router-dom';
 import Header from './components/Home/Header';
-import Landing from './components/Landing';
+import Landing from './Pages/Landing';
 import Contractors from './components/Home/Contractors';
 import Roadmap from './components/Home/Roadmap';
 import SVG from './components/Home/SVG'
@@ -14,10 +14,10 @@ import Footer from './components/Footer';
 import LookingForWork from './components/Home/LookingForWork';
 import Quote from './components/Home/Quote';
 import Navbar from './components/Navbar';
-import Team from './components/Team';
-import Contact from './components/Contact';
-import About from './components/About/About';
-import Facts from './components/Facts'
+import Team from './Pages/Team';
+import Contact from './Pages/Contact';
+import About from './Pages/About/About';
+import Facts from './Pages/Facts'
 
 
 function App() {
@@ -49,18 +49,22 @@ function App() {
           <Landing />
         </Route>
         <Route exact path="/home/:language">
-          {content.hero ? <Header hero={content.hero} navbar={content.navbar} lang={lang} setLang={setLang}/> : null}
-          <Explore {...content.explore} />
-          <Mission {...content.mission}/>
-          {content.contractors ? <Contractors {...content.contractors} /> : null}
-          <Roadmap roadmap={content.roadmap} />
-          <ProjectCreation cardInfo={cardInfo} />
-          <SVG />
-          <section className="gradient">
-            <Quote />
-            <Technology />
-            <LookingForWork />
-          </section>
+          {content.hero ? (
+            <>
+              <Header hero={content.hero} navbar={content.navbar} lang={lang} setLang={setLang}/> 
+              <Explore {...content.explore} />
+              <Mission {...content.mission}/>
+              <Contractors {...content.contractors} />
+              <Roadmap roadmap={content.roadmap} />
+              <ProjectCreation cardInfo={cardInfo} />
+              <SVG />
+              <section className="gradient">
+                <Quote {...content.quote} />
+                <Technology {...content.technology}/>
+                <LookingForWork {...content.looking}/>
+              </section>
+            </>
+          ) : null }
         </Route>
         <Route exact path="/team" render={(props) => <Team team={content.team} /> }/> 
         <Route exact path="/contact" render={(props) => <Contact />} />

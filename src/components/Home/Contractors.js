@@ -4,7 +4,7 @@ import contractors from '../../contractors.jpeg'
 import subcontractors from '../../subcontractors.jpeg'
 
 
-export default function Contractors({title, general, sub}) {
+export default function Contractors({title, general={}, sub={}}) {
     return (
         <section className='divider'>
             <h2>{title}</h2>

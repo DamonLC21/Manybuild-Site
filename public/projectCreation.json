@@ -81,6 +81,46 @@
                     "content": "ManyBuild is a community forward platform built to augment the talents of the building community.  While other technology platforms are innovating and optimizing for supply chains, ManyBuild is optimizing for the people."  
                 }
             ],
+            "quote": {
+                "quote": "“You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.”",
+                "button": "Learn the realities of labor in the construction market today"
+            },
+            "technology": {
+                "title": "Technology Contractors Love",
+                "p1": "Build a flexible solution with ManyBuild’s first-of-its-kind  platform.",
+                "subHeading1": "What Is Flexibility, Anyway?",
+                "p2": "We erased the confusing ways of the past and created a solution that address time and location-based needs, allowing companies and employees to speak the same language.",
+                "subHeading2": "Top Contractors use ManyBuild.",
+                "p3": "Our customers are committed to succeeding in a flexible future. ManyBuild Solutions creates different ideas."
+            },
+            "looking": {
+                "title": "Looking for more construction work?",
+                "steps": [
+                    {
+                        "step": "Step 1",
+                        "p": "Fill out your application. Tell us what kind of work you are looking for and we’ll create a profile for you. It’s completely free to sign up.",
+                        "image": "../images/Step1.png",
+                        "animation": "fadeInLeft"
+                    },
+                    {
+                        "step": "Step 2",
+                        "p": "Fill out your application. Tell us what kind of work you are looking for and we’ll create a profile for you. It’s completely free to sign up.",
+                        "image": "../images/Step2.png",
+                        "animation": "fadeInUp"
+                    },
+                    {
+                        "step": "Step 3",
+                        "p": "Fill out your application. Tell us what kind of work you are looking for and we’ll create a profile for you. It’s completely free to sign up.",
+                        "image": "../images/Step3.png",
+                        "animation": "fadeInRight"
+                    }
+                ],
+                "contact": {
+                    "heading": "Get in Touch - Se Habla Español",
+                    "p": "SCHEDULE AN IN-PERSON MEETING TO DISCUSS YOUR PROJECT AND MEET THE FOUNDERS.",
+                    "button": "Contact"
+                }
+            },
             "team": [
                 {
                     "name": "Alejandro Daniel Lovera",

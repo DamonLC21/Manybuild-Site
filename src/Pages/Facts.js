@@ -1,8 +1,8 @@
 import React from 'react'
 import img from '../manybuild.jpg'
 import { easeQuadInOut } from "d3-ease";
-import AnimatedProgressProvider from "./AnimatedProgressProvider";
-import ChangingProgressProvider from "./ChangingProgressProvider";
+import AnimatedProgressProvider from "../components/AnimatedProgressProvider";
+import ChangingProgressProvider from "../components/ChangingProgressProvider";
 import {
     CircularProgressbar,
     CircularProgressbarWithChildren,
@@ -11,7 +11,7 @@ import {
 import "react-circular-progressbar/dist/styles.css";
 import ScrollAnimation from 'react-animate-on-scroll'
 import VisibilitySensor from 'react-visibility-sensor';
-import PercentageBar from './PercentageBar';
+import PercentageBar from '../components/PercentageBar';
 
 
 export default function Facts() {

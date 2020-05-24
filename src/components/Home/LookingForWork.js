@@ -1,79 +1,45 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom'
-import step1 from '../../Step1.png'
-import step2 from '../../Step2.png'
-import step3 from '../../Step3.png'
 
-export default function LookingForWork() {
+export default function LookingForWork({title, steps=[], contact={}}) {
     return (
         <section className="looking-container">
-            <h2>Looking for more construction work?</h2>
-           <ul>
-                <ScrollAnimation 
-                    animateIn="fadeInLeft"  
-                    animateOnce={true}
-                    duration={2}
-                >
-                    <li>
-                            <div className="iphone-half">
-                                <div className="eyebrow">
-                                    <div className="speaker"></div>
-                                </div>
-                                <img src={step1} />
-                            </div>
-                            <div className="steps">
-                                <h3>Step 1</h3>
-                                <p>Fill out your application. Tell us what kind of work you are looking for and we’ll create a profile for you. 
-                                    It’s completely free to sign up.
-                                </p>
-                            </div>
-                    </li>
-                </ScrollAnimation>
-                <ScrollAnimation 
-                    animateIn="fadeInUp"  
-                    animateOnce={true}
-                    duration={2}
-                >
-                    <li className="li-mid">
-                        <div className="iphone-half">
-                            <div className="eyebrow">
-                                <div className="speaker"></div>
-                            </div>
-                            <img src={step2} />
-                        </div>
-                        <div className="steps">
-                            <h3>Step 2</h3>
-                            <p>Once your application is complete our system gets to work for you to find and match you with our projects.
-                            </p>
-                        </div>
-                    </li>
-                </ScrollAnimation>
-                <ScrollAnimation 
-                    animateIn="fadeInRight"  
-                    animateOnce={true}
-                    duration={2}
-                >
-                    <li>
-                        <div className="iphone-half">
-                            <div className="eyebrow">
-                                <div className="speaker"></div>
-                            </div>
-                            <img src={step3} />
-                        </div>
-                        <div className="steps">
-                        <h3>Step 3</h3>
-                            <p>When we match you to a project or company that needs your skills we connect you directly with the opportunity.
-                            </p>
-                        </div>
-                    </li>
-                </ScrollAnimation>
-           </ul>
+            <h2>{title}</h2>
+            <ul>{showSteps(steps)}</ul>
            <section className="in-touch">
-                <h2>Get in Touch - Se Habla Español</h2>
-                <p>SCHEDULE AN IN-PERSON MEETING TO DISCUSS YOUR PROJECT AND MEET THE FOUNDERS.</p>
-                <Link to="/contact"><button>Contact</button></Link>
+                <h2>{contact.heading}</h2>
+                <p>{contact.p}</p>
+                <Link to="/contact"><button>{contact.button}</button></Link>
            </section>
         </section>
     )
+    
+    function showSteps(steps){
+        return steps.map(createStepCard)
+    }
+
+    function createStepCard({step,p,image,animation}, i){
+        return ( 
+                <ScrollAnimation 
+                    animateIn={animation}  
+                    animateOnce={true}
+                    duration={2}
+                    key={i}
+                >
+                    <li>
+                        <div className="iphone-half">
+                            <div className="eyebrow">
+                                <div className="speaker"></div>
+                            </div>
+                            <img src={image} />
+                        </div>
+                        <div className="steps">
+                            <h3>{step}</h3>
+                            <p>{p}</p>
+                        </div>
+                    </li>
+                </ScrollAnimation>
+        )
+    }
 }
